@@ -1,0 +1,103 @@
+    <html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1">
+    <title>This is my weather App</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700|" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" href="mystyle.css">
+		
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCNG0jRQBKX4WBQ2SUpO_fBkHnTJk6InzQ&libraries=places"></script>
+  </head>
+  <body >
+      
+     <div id="mymaindiv" >
+    <div class="find-box">
+     
+      <input id="searchTextField" class="field" type="text"  placeholder="Forecast is limited to 3 days" autocomplete="on" runat="server" />
+      <input  hidden id="city2" name="city2" />
+      <input  hidden id="cityLat" name="cityLat" />
+      <input  hidden id="cityLng" name="cityLng" />
+      <input  hidden id="weather" name="weather"/>
+      
+</div>
+
+<div  class="forecast-table">
+				<div class="container">
+					<div class="forecast-container">
+						<div class="today forecast">
+							<div class="forecast-header">
+								<div class="day"></div>
+								<div id="mycurrentdate" class="date"></div>
+							</div> <!-- .forecast-header -->
+							<div class="forecast-content">
+								<div  id="mylocation" class="location">Location</div>
+								<div class="degree">
+									<div id="mynum" class="num">0<sup>o</sup>C</div>
+									<div class="forecast-icon">
+										<img id="myImg"  alt="" width=40 >
+									</div>
+								</div>
+								<span ><img src="images/icon-umberella.png" alt=""><span id="mycurrenthum"></span></span>
+								<span><img src="images/icon-wind.png" alt=""><span id="mycurrentwind"></span></span>
+								<span><img src="images/icon-compass.png" alt=""><span id="mycurrentdir"></span></span>
+							</div>
+						</div>
+						<div class="forecast">
+							<div class="forecast-header">
+								<div class="day"></div>
+							</div> <!-- .forecast-header -->
+							<div class="forecast-content">
+								<div class="forecast-icon">
+									<img id="myImg1"  alt="" width=48>
+								</div>
+								<div id="castnum1" class="degree"><sup>o</sup>C</div>
+								<small id="castnum1small"><sup>o</sup></small>
+							</div>
+						</div>
+						<div class="forecast">
+							<div class="forecast-header">
+								<div class="day"></div>
+							</div> <!-- .forecast-header -->
+							<div class="forecast-content">
+								<div class="forecast-icon">
+									<img id="myImg2"  alt="" width=48>
+								</div>
+								<div id="castnum2" class="degree"><sup>o</sup>C</div>
+								<small id="castnum2small"><sup>o</sup></small>
+							</div>
+						</div>
+						<div class="forecast">
+							<div class="forecast-header">
+								<div class="day"></div>
+							</div> <!-- .forecast-header -->
+							<div class="forecast-content">
+								<div class="forecast-icon">
+									<img  alt="" width=48>
+								</div>
+								<div class="degree">-<sup>o</sup>C</div>
+								<small>-<sup>o</sup></small>
+							</div>
+						</div>
+						<div class="forecast">
+							<div class="forecast-header">
+								<div class="day"></div>
+							</div> <!-- .forecast-header -->
+							<div class="forecast-content">
+								<div class="forecast-icon">
+									<img  alt="" width=48>
+								</div>
+								<div class="degree">-<sup>o</sup>C</div>
+								<small>-<sup>o</sup></small>
+							</div>
+						</div>
+						
+						
+					</div>
+				</div>
+			</div>
+			</div>
+
+      <script src="myscript.js"></script>
+    </body>
+    </html>

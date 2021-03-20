@@ -1,0 +1,210 @@
+body
+{
+  margin: 0;
+  padding: 0;
+  background-image: url(2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+ 
+}
+
+.rain
+{
+	height: 100vh;
+	background: url(rain.png);
+	animation: rain .3s linear infinite;
+    
+	
+	
+}
+
+	.field 
+	{
+		width: 360px;
+		background: #fff;
+		color: rgba(0, 0, 0 , .7);
+		font: inherit;
+		box-shadow: 0 6px 10px 0 rgba(0, 0, 0 , .4);
+		border: 0;
+		outline: 0;
+		padding: 22px 18px;
+	}
+
+.rain:before
+{
+	content: '';
+	position: absolute;
+	width:100%;
+	height:100%;
+	background: #fff;
+	
+    animation: lighting 4s linear ;
+    opacity: 0;
+}
+
+ @keyframes rain
+{
+	0%
+	{
+		background-position: 0% 0%;
+	}
+	100%
+	{
+		background-position: 20% 100%;
+	}
+	
+	
+}
+@keyframes lighting
+{
+	0%
+	{
+		opacity: 0;
+	}
+	10%
+	{
+		opacity: 0;
+	}
+	11%
+	{
+		opacity: 1;
+	}
+	14%
+	{
+		opacity: 0;
+	}
+	20%
+	{
+		opacity: 0;
+	}
+	21%
+	{
+		opacity: 1;
+	}
+	24%
+	{
+		opacity: 0;
+	}
+	104%
+	{
+		opacity: 0;
+	}
+	
+	
+}	
+
+.container
+{
+
+  width:90%;
+  margin:auto;
+}
+.forecast-container {
+color:white;
+  width: 100%;
+  background: rgba(0,0,0,.85);
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+  
+  overflow: hidden;
+  border-radius: 10px;
+  margin-top: 150px;
+  margin-bottom: 50px; }
+  .forecast-container .forecast {
+
+    display: table-cell;
+    vertical-align: top; }
+    .forecast-container .forecast:nth-child(even) {
+        background-color:rgba(18,19,19,.55) ; }
+    @media screen and (max-width: 990px) {
+      .forecast-container .forecast {
+        display: block;
+        width: 25%;
+        float: left; } }
+    .forecast-container .forecast.today {
+      width: 420px; }
+      .forecast-container .forecast.today .forecast-header {
+        *zoom: 1; }
+        .forecast-container .forecast.today .forecast-header:after {
+          content: " ";
+          clear: both;
+          display: block;
+          overflow: hidden;
+          height: 0; }
+        .forecast-container .forecast.today .forecast-header .day {
+
+          float: left; }
+        .forecast-container .forecast.today .forecast-header .date {
+
+          float: right; }
+      .forecast-container .forecast.today .forecast-content {
+        
+        text-align: left;
+        padding-top: 30px;
+        padding-bottom: 30px; }
+      .forecast-container .forecast.today .location {
+        font-size: 18px;
+        font-size: 1.2857142857em;
+        font-weight: 400; }
+      .forecast-container .forecast.today .degree .num, .forecast-container .forecast.today .degree .forecast-icon {
+        display: inline-block;
+        vertical-align: middle; }
+      .forecast-container .forecast.today .degree .num {
+
+        font-size: 90px;
+        font-size: 6.4285714286rem;
+        margin-right: 30px; }
+      .forecast-container .forecast.today span {
+        margin-right: 20px; }
+        .forecast-container .forecast.today span img {
+          margin-right: 5px;
+          vertical-align: middle; }
+      @media screen and (max-width: 990px) {
+        .forecast-container .forecast.today {
+          display: block;
+          width: 100%; } }
+    .forecast-container .forecast .forecast-header {
+      background: rgba(0, 0, 0, 0.1);
+      padding: 10px;
+      text-align: center;
+      font-weight: 400; }
+    .forecast-container .forecast .forecast-icon {
+      height: 50px; }
+    .forecast-container .forecast .forecast-content {
+      padding: 50px 20px 10px;
+      text-align: center; }
+      .forecast-container .forecast .forecast-content .forecast-icon {
+        margin-bottom: 20px; }
+      .forecast-container .forecast .forecast-content .degree {
+        text-align:center;
+        font-size: 20px;
+        font-size: 1.5142857143em;
+        color: white;
+        font-weight: 700; }
+      .forecast-container .forecast .forecast-content small {
+        font-size: 16px;
+        font-size: 1.1428571429em; }
+
+        .find-box{
+         margin :auto;
+        width:400px;
+        position:relative;
+    }
+    .find-box input[type="text"]{
+      margin-top: 100px;
+        width:400px;
+        height:30px;
+        border-radius: 5px;
+        font-family:arial;
+        text-transform:capitalize;
+        text-indent:10px;
+        outline:none;
+    }
+    
+
+
+
+
+
+
